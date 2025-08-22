@@ -2,13 +2,11 @@ class Solution {
 
     void printTriangle(int n) {
         // code here
-        int i,j;
-        char ch;
-        for(i = n; i >= 1; i--){
-            ch = 'A';
-            for(j = 1; j <= i; j++){
-                System.out.print(ch);
-                ch++;
+        for(int i = 1; i <= n; i++){
+            char st = 'A';
+            for(int j = n; j >= i; j--){
+                System.out.print(st);
+                st++;
             }
             System.out.println();
         }
